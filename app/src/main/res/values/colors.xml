@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0072c6</color>
+    <color name="colorPrimaryDark">#0050a4</color>
+    <color name="colorAccent">#0072c6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBtnText">#06000b</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="colorButton">#7fba00</color>
+    <color name="colorTextHint">#a6a6a6</color>
+    <color name="list_color_bg">#ededed</color>
+    <color name="colorAccentGreen">#00b16a</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorActiveStatus">#22bb22</color>
+    <color name="colorInactiveStatus">#cc3333</color>
+    <color name="greycolor">#A0A0A0</color>
+    <color name="colorRed">#ff6f6f</color>
+    <color name="colorInfoText">#ff7f7f7f</color>
+
+</resources>

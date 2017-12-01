@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:longClickable="true"
+    app:layout_collapseParallaxMultiplier="1.0">
+    <ImageView
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/status_image_view"
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        app:srcCompat="@drawable/ic_circle_black_24dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginBottom="5dp"
+            android:text="Tester" />
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:id="@+id/list_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="Another Tester" />
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/list_fav_star"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin"
+        android:layout_marginRight="@dimen/text_margin"
+        app:srcCompat="@drawable/star_yellow_active" />
+</LinearLayout>

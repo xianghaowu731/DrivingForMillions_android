@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tag="layout/content_d4d_property_detail_0"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/text_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/property_information" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/property_address"
+                        android:tag="binding_1"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/property_city"
+                        android:tag="binding_2"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/property_state"
+                        android:tag="binding_3"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zip_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/property_zip"
+                        android:tag="binding_4"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/primary_owner_and_mailing_address" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_name"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="John Smith"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_address"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="123 Main Street"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_city"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Atlanta"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_state"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="GA"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zip_label"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_zip"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="GA"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_phone"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="GA"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/text_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp"
+                        android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_weight="2.5" />
+                    <TextView android:textSize="14sp"
+                        android:textColor="@color/colorBtnText"
+                        android:id="@+id/owner_email"
+                        android:paddingLeft="@dimen/text_margin"
+                        android:paddingRight="@dimen/text_margin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="GA"
+                        android:layout_weight="7.5" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/secondary_owner" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_margin"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:textSize="14sp"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_label"
+                    android:layout_weight="2.5" />
+                <TextView android:textSize="14sp"
+                    android:textColor="@color/colorBtnText"
+                    android:id="@+id/secondary_owner_name"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingRight="@dimen/text_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jane Smith"
+                    android:layout_weight="7.5" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tax_history" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_margin"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Year"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_tax_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Taxes"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_tax_taxes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Land"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_tax_Land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Improvements"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_tax_improvements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Total Assessme"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_tax_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Estimated Value" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_margin"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Low"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_value_low"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Estimated"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_estimated_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="High"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/tv_detail_value_high"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBtnText"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <TextView android:textSize="10sp"
+            android:paddingLeft="@dimen/text_margin"
+            android:paddingRight="@dimen/text_margin"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/data_information" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="4dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/text_margin"
+                android:paddingBottom="@dimen/text_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:textSize="12sp"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/updated_label"
+                    android:layout_weight="2.5" />
+                <TextView android:textSize="14sp"
+                    android:textColor="@color/colorBtnText"
+                    android:id="@+id/data_updated"
+                    android:tag="binding_5"
+                    android:paddingLeft="@dimen/text_margin"
+                    android:paddingRight="@dimen/text_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+
+

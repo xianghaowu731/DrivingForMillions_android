@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+Properties getGradleProperties() {
+    def gradlePropsFile = file('../gradle.properties')
+    def Properties gradleProps = new Properties()
+    if (gradlePropsFile.canRead()) {
+        gradleProps.load(new FileInputStream(gradlePropsFile))
+        println gradleProps['VERSION_CODE']
+        println gradleProps['VERSION_NAME']
+    } else {
+        throw new GradleException("Could not read gradle.properties!")
+    }
+    gradleProps;
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    def gradleProps = getGradleProperties()
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 25
+        versionCode gradleProps['VERSION_CODE'].toInteger()
+        versionName gradleProps['VERSION_NAME']
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile "com.android.support:appcompat-v7:25.3.1"
+    compile 'net.i2p.android.ext:floatingactionbutton:1.9.0'
+}
+
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'
