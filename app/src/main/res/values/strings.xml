@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Driving For Millions</string>
+    <string name="username_or_email_hint">Username -or- Email</string>
+    <string name="username">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
+    <string name="dont_have_account">Don\'t have an account? Create one now!</string>
+    <string name="already_have_account">Already have an account? Sign in now!</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="waitstring">Please wait...</string>
+
+    <string name="ERROR_NETWORK">You\'re not online. You can not access the info from the server.</string>
+    <string name="title_activity_main">My Lists</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_list_property">Lists <![CDATA["&"]]> Properties</string>
+    <string name="menu_account_security">Account <![CDATA["&"]]> Security</string>
+    <string name="about_string">Welcome to the Driving For Millions App! The Revolutionary Real-estate Direct-Mail Scouting App!\n\n If you know that Direct Mail Marketing is vital to your businesses success and you find yourself driving neighborhoods to find potential business, then the Driving For Millions App is for you. This App eliminates all the work needed to determine homeowners and where they can be mailed in order to better market to them through direct mail.\n\n The term “Driving For Millions” was coined in the real estate investing world, which means to drive neighborhoods in order to find lucrative deals for your business. We developed this App for Real Estate Investors trying to find deals, Realtors looking for listings, or Tradesman looking to market their businesses in specific neighborhoods. If your goal is to drive neighborhoods and direct mail market to homeowners, then this app will eliminate all the back-end work of finding who the homeowner is and where to send them mail. For many, this means eliminating hours of work or eliminating the expense of having an employee do this work for you.\n\n This App is integrated with a major data provider to give you the latest, public information you seek and then exports your lists into an excel spread sheet so you can easily mail merge your marketing letters. The user interface allows you to speak the address into the app, type in an individual address, or drop pins on specific properties in the overhead map view.</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="account_information_label">ACCOUNT INFORMATION</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="plan_information_label">Plan Information</string>
+    <string name="properties_saved_label">Properties Saved:</string>
+    <string name="properties_remaining_label">Properties Remaining:</string>
+    <string name="buy_more_property_requests">Buy More Property Requests</string>
+    <string name="no_lists_message">No lists. Tap the + to create a new list.</string>
+    <string name="no_fav_message">No favorites. Tap the star on individual properties to add them to your favorites.</string>
+    <string name="title_activity_maps">List Map</string>
+    <string name="name_your_list">Name Your List</string>
+    <string name="continue_text">Continue</string>
+    <string name="enter_list_name">Please enter a list name before continuing</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="list_data_will_be_lost">All new and/or updated list data will be lost if you continue.</string>
+    <string name="unable_to_get_address_for_location">Unable to get address for location</string>
+    <string name="properties">properties</string>
+    <string name="remaining">remaining</string>
+
+    <string name="property_information">Property Information</string>
+    <string name="address_label">Address</string>
+    <string name="city_label">City</string>
+    <string name="state_label">State</string>
+    <string name="zip_label">Zip Code</string>
+    <string name="primary_owner_and_mailing_address">Primary Owner And Mailing Address</string>
+    <string name="name_label">Name</string>
+    <string name="secondary_owner">Secondary Owner</string>
+    <string name="data_information">Data Information</string>
+    <string name="updated_label">Updated Date</string>
+    <string name="tax_history">Tax History</string>
+
+    <string name="facebook_app_id">139435540089719</string>
+    <string name="fb_login_protocol_scheme">fb139435540089719</string>
+</resources>

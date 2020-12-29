@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_right_icon_size">16dp</dimen>
+    <dimen name="notification_right_side_padding_top">4dp</dimen>
+    <dimen name="notification_small_icon_background_padding">3dp</dimen>
+    <dimen name="notification_small_icon_size_as_large">24dp</dimen>
+    <dimen name="notification_subtext_size">13sp</dimen>
+    <dimen name="notification_top_pad">10dp</dimen>
+    <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="showcase_radius">94dp</dimen>
+    <dimen name="showcase_radius_inner">96dp</dimen>
+    <dimen name="showcase_radius_material">48dp</dimen>
+    <dimen name="showcase_radius_outer">128dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="text_padding">24dp</dimen>
+    <dimen name="tooltip_corner_radius">2dp</dimen>
+    <dimen name="tooltip_horizontal_padding">16dp</dimen>
+    <dimen name="tooltip_margin">8dp</dimen>
+    <dimen name="tooltip_precise_anchor_extra_offset">8dp</dimen>
+    <dimen name="tooltip_precise_anchor_threshold">96dp</dimen>
+    <dimen name="tooltip_vertical_padding">6.5dp</dimen>
+    <dimen name="tooltip_y_offset_non_touch">0dp</dimen>
+    <dimen name="tooltip_y_offset_touch">16dp</dimen>
+    <dimen name="touch_raise">12dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">10dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="map_fab_margin">8dp</dimen>
+</resources>

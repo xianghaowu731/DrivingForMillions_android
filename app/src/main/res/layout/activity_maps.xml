@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/list_map_toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:collapseIcon="@drawable/ic_arrow_back_white_24dp"/>
+    <ScrollView android:id="@+id/list_name_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/list_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:hint="@string/name_your_list"
+                android:maxLines="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="text" />
+            <Button android:textColor="@color/colorWhite"
+                android:id="@+id/list_continue_button"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginRight="@dimen/text_margin"
+                android:text="@string/continue_text"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/map_view_container"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/map_type_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/map_fab_margin"
+            android:layout_marginBottom="@dimen/map_fab_margin"
+            android:layout_above="@+id/my_location_button"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/list_color_bg"
+            android:src="@drawable/ic_map_black_24dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/my_location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/map_fab_margin"
+            android:layout_marginBottom="@dimen/map_fab_margin"
+            android:layout_above="@+id/save_list_button"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/list_color_bg"
+            android:src="@drawable/ic_my_location_black_24dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/save_list_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/map_fab_margin"
+            android:layout_marginRight="@dimen/map_fab_margin"
+            android:layout_marginBottom="@dimen/map_fab_margin"
+            android:layout_above="@+id/toolbar3"
+            android:layout_alignParentRight="true"
+            app:backgroundTint="@color/colorAccentGreen"
+            android:src="@drawable/ic_done_white_24dp" />
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/map_toolbar"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentTop="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/back_button"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+                <EditText android:id="@+id/location_search_edit_text"
+                    android:background="@color/colorWhite"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="Search"
+                    android:maxLines="1"
+                    android:layout_weight="8.0"
+                    android:inputType="text|textAutoCorrect|textAutoComplete|textPersonName|textPostalAddress"
+                    android:imeOptions="actionSearch" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+        <ImageButton android:id="@+id/menu_button"
+            android:background="@color/colorTransparent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@id/toolbar3"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/text_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/property_count_button"
+                    android:background="@color/colorTransparent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Properties"
+                    android:layout_weight="1.0" />
+                <Button android:textColor="@color/colorWhite"
+                    android:id="@+id/properties_remaining_button"
+                    android:background="@color/colorTransparent"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0 Remaining"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+</FrameLayout>
